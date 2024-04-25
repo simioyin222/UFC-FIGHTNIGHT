@@ -1,0 +1,301 @@
+.streaming-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.streaming-page .overlap-wrapper {
+  background-color: #ffffff;
+  height: 812px;
+  overflow: hidden;
+  width: 375px;
+}
+
+.streaming-page .overlap {
+  height: 812px;
+  left: -36px;
+  position: relative;
+  width: 447px;
+}
+
+.streaming-page .UFC-RING-AND {
+  height: 812px;
+  left: 36px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 375px;
+}
+
+.streaming-page .FIGHT-streaming-page {
+  -webkit-text-stroke: 1px #000000;
+  color: #d20a0a;
+  font-family: "Keania One-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  width: 114px;
+}
+
+.streaming-page .NIGHT-streaming-page {
+  -webkit-text-stroke: 1px #000000;
+  color: #d20a0a;
+  font-family: "Keania One-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 276px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  width: 129px;
+}
+
+.streaming-page .whole-ufc-belt {
+  height: 204px;
+  left: 0;
+  position: absolute;
+  top: 24px;
+  width: 447px;
+}
+
+.streaming-page .overlap-group {
+  height: 204px;
+  left: 32px;
+  position: relative;
+  width: 381px;
+}
+
+.streaming-page .ufc-belt-STREAMING {
+  height: 204px;
+  left: 4px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 375px;
+}
+
+.streaming-page .home-nav-bar-button {
+  all: unset;
+  box-sizing: border-box;
+  height: 69px;
+  left: 0;
+  position: absolute;
+  top: 67px;
+  width: 84px;
+}
+
+.streaming-page .div {
+  height: 69px;
+  position: relative;
+  width: 86px;
+}
+
+.streaming-page .home-nav-bar-box {
+  background-color: #9c7d4f;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 69px;
+  left: 4px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.streaming-page .home-icon-and-title {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 86px;
+}
+
+.streaming-page .overlap-group-2 {
+  height: 64px;
+  position: relative;
+  width: 84px;
+}
+
+.streaming-page .house-icon-red-md {
+  height: 41px;
+  left: 21px;
+  position: absolute;
+  top: 23px;
+  width: 43px;
+}
+
+.streaming-page .rectangle {
+  background-color: #ffffff;
+  height: 20px;
+  left: 37px;
+  position: absolute;
+  top: 41px;
+  width: 11px;
+}
+
+.streaming-page .ellipse {
+  background-color: #000000;
+  border-radius: 1.13px/1.17px;
+  height: 2px;
+  left: 46px;
+  position: absolute;
+  top: 50px;
+  width: 2px;
+}
+
+.streaming-page .text-wrapper {
+  color: #d20a0a;
+  font-family: "Keania One-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 0;
+  width: 84px;
+}
+
+.streaming-page .catering-nav-bar {
+  height: 69px;
+  left: 200px;
+  position: absolute;
+  top: 67px;
+  width: 84px;
+}
+
+.streaming-page .catering-nav-bar-box {
+  background-color: #9c7d4f;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 69px;
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.streaming-page .overlap-group-wrapper {
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 86px;
+}
+
+.streaming-page .overlap-group-3 {
+  height: 66px;
+  position: relative;
+  width: 84px;
+}
+
+.streaming-page .catering-icon {
+  height: 46px;
+  left: 15px;
+  position: absolute;
+  top: 20px;
+  width: 55px;
+}
+
+.streaming-page .trending-nav-bar {
+  height: 69px;
+  left: 297px;
+  position: absolute;
+  top: 67px;
+  width: 84px;
+}
+
+.streaming-page .trending-nav-bar-box {
+  background-color: #9c7d4f;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 69px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.streaming-page .trending-icon {
+  height: 45px;
+  left: 7px;
+  position: absolute;
+  top: 21px;
+  width: 69px;
+}
+
+.streaming-page .opinions-nav-bar {
+  height: 69px;
+  left: 103px;
+  position: absolute;
+  top: 67px;
+  width: 88px;
+}
+
+.streaming-page .overlap-2 {
+  height: 69px;
+  position: relative;
+  width: 90px;
+}
+
+.streaming-page .opinions-nav-bar-box {
+  background-color: #9c7d4f;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 69px;
+  left: 3px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.streaming-page .opinions-icon-and {
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 90px;
+}
+
+.streaming-page .overlap-group-4 {
+  height: 66px;
+  position: relative;
+  width: 88px;
+}
+
+.streaming-page .text-wrapper-2 {
+  color: #d20a0a;
+  font-family: "Keania One-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 1px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 0;
+  width: 84px;
+}
+
+.streaming-page .opinions-icon {
+  height: 44px;
+  left: 0;
+  position: absolute;
+  top: 22px;
+  width: 88px;
+}
