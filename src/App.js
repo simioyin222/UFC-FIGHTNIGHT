@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import CateringPage from './components/CateringPage';
+import CateringPage from './components/cateringpage';
 import VotingPage from './components/VotingPage';
 
 function App() {
