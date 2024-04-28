@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../styles/VotingPage.css";
 
 export const OpinionsPageVoting = () => {
   return (

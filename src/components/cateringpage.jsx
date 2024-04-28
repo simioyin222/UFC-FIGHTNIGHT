@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../styles/CateringPage.css";
 
 export const CateringPage = () => {
   return (
