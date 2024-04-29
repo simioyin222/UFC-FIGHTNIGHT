@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/VotingPage.css";
 
-export const OpinionsPageVoting = () => {
+export const VotingPage = () => {
   return (
     <div className="opinions-page-voting">
       <div className="overlap-wrapper">

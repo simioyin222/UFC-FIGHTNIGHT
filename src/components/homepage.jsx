@@ -1,5 +1,5 @@
 import React from "react";
-import "./FirstPageHomePage.css";
+import "../styles/HomePage.css";
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
@@ -26,7 +26,7 @@ const handleDateSelect = (selectInfo) => {
   }
 };
 
-export const FirstPageHomePage = () => {
+export const HomePage = () => {
   return (
     <div className="first-page-home-page">
       <FullCalendar
