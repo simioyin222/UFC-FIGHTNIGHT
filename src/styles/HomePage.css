@@ -1,4 +1,4 @@
-.first-page-home-page {
+.home-page {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@
   width: 447px;
 }
 
-.first-page-home-page .UFC-RING-PIC-first {
+.first-page-home-page .UFC-RING-PIC-3-first-page-background {
   height: 812px;
   left: 38px;
   object-fit: cover;
