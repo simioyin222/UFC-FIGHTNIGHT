@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/HomePage.css";
+import ufcRingPic from '../assets/HOMEPAGE/UFC-RING-PIC-3-first-page-background.png';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
@@ -108,3 +109,9 @@ export const HomePage = () => {
     </div>
   );
 };
+
+const Component = () => (
+  <img src={ufcRingPic} alt="UFC Ring" />
+);
+
+export default Component;
