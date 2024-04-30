@@ -28,7 +28,7 @@ const handleDateSelect = (selectInfo) => {
 
 export const HomePage = () => {
   return (
-    <div className="first-page-home-page">
+    <div className="home-page">
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
@@ -49,7 +49,7 @@ export const HomePage = () => {
       />
       <div className="overlap-wrapper">
         <div className="overlap">
-        <img className="UFC-RING-PIC-first" alt="Ufc RING PIC first" src="../assets/HOMEPAGE/UFC-RING-PIC-3-first-page-background.png" />
+        <img className="UFC-RING-PIC-first" alt="Ufc RING PIC first" src="../../assets/HOMEPAGE/UFC-RING-PIC-3-first-page-background.png" />
         <img className="left-ufc-laughing" alt="Left ufc laughing" src="../assets/HOMEPAGE/left-ufc-laughing-guy-2.png" />
         <img className="right-ufc-laughing" alt="Right ufc laughing" src="../assets/HOMEPAGE/right-ufc-laughing-guy-1.png" />
           <div className="FIGHT-text-FIRST">FIGHT</div>
@@ -66,7 +66,7 @@ export const HomePage = () => {
               <div className="catering-nav-bar">
                 <div className="overlap-2">
                 <div className="catering-nav-bar-box" />
-                <img className="UFC-RING-PIC-first" alt="Ufc RING PIC first" src="../assets/HOMEPAGE/UFC-RING-PIC-3-first-page-background.png" />
+                <img className="UFC-RING-PIC-first" alt="Ufc RING PIC first" src="../../assets/HOMEPAGE/UFC-RING-PIC-3-first-page-background.png" />
                 <img className="catering-icon-and" alt="Catering icon and" src="../assets/HOMEPAGE/catering-icon-and-text-streaming-page.png" />
                 </div>
               </div>
