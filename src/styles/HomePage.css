@@ -1,9 +1,21 @@
-.home-page {
-  background-color: #ffffff;
+.first-page-home-page {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  position: relative;
   width: 100%;
+  height: 100vh; /* Adjust height as per content or full-screen */
+}
+
+.calendar-container {
+  position: absolute;
+  top: 50%;  /* Centering vertically */
+  left: 50%; /* Centering horizontally */
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust based on your design preference */
+  max-width: 600px; /* Ensuring it does not get too large on wider screens */
+  z-index: 2; /* Higher index to overlay on the background */
 }
 
 .first-page-home-page .overlap-wrapper {
@@ -21,30 +33,28 @@
 }
 
 .first-page-home-page .UFC-RING-PIC-3-first-page-background {
-  height: 812px;
-  left: 38px;
-  object-fit: cover;
   position: absolute;
   top: 0;
-  width: 373px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first-page-home-page .left-ufc-laughing,
+.first-page-home-page .right-ufc-laughing {
+  position: absolute;
+  width: 10%; /* Responsive width */
+  height: auto;
+  top: 35%; /* Adjust vertical position as needed */
 }
 
 .first-page-home-page .left-ufc-laughing {
-  height: 92px;
-  left: 36px;
-  object-fit: cover;
-  position: absolute;
-  top: 360px;
-  width: 75px;
+  left: 5%; /* Adjust based on your design */
 }
 
 .first-page-home-page .right-ufc-laughing {
-  height: 92px;
-  left: 342px;
-  object-fit: cover;
-  position: absolute;
-  top: 360px;
-  width: 69px;
+  right: 5%; /* Adjust based on your design */
 }
 
 .first-page-home-page .FIGHT-text-FIRST {

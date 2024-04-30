@@ -39,63 +39,65 @@ const handleDateSelect = (selectInfo) => {
 export const HomePage = () => {
   return (
     <div className="first-page-home-page">
-      <FullCalendar
-        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-        initialView="dayGridMonth"
-        headerToolbar={{
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay'
-        }}
-        selectable={true}
-        selectMirror={true}
-        dayMaxEvents={true}
-        weekends={true}
-        events={[ // Static events for demonstration
-          { title: 'Event 1', start: '2024-04-20', end: '2024-04-22' },
-          { title: 'Event 2', start: '2024-04-23', allDay: true }
-        ]}
-        select={handleDateSelect}
-      />
+      <img className="UFC-RING-PIC-first" src={ufcRingPic} alt="UFC Ring Background" />
+      <div className="calendar-container">
+        <FullCalendar
+          plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+          initialView="dayGridMonth"
+          headerToolbar={{
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          }}
+          selectable={true}
+          selectMirror={true}
+          dayMaxEvents={true}
+          weekends={true}
+          events={[ // Static events for demonstration
+            { title: 'Event 1', start: '2024-04-20', end: '2024-04-22' },
+            { title: 'Event 2', start: '2024-04-23', allDay: true }
+          ]}
+          select={handleDateSelect}
+        />
+      </div>
+      <img className="left-ufc-laughing" src={leftUfcLaughing} alt="Left UFC Laughing Guy" />
+      <img className="right-ufc-laughing" src={rightUfcLaughing} alt="Right UFC Laughing Guy" />
       <div className="overlap-wrapper">
         <div className="overlap">
-          <img className="UFC-RING-PIC-first" alt="Ufc RING PIC first" src={ufcRingPic} />
-          <img className="left-ufc-laughing" alt="Left ufc laughing" src={leftUfcLaughing} />
-          <img className="right-ufc-laughing" alt="Right ufc laughing" src={rightUfcLaughing} />
           <div className="FIGHT-text-FIRST">FIGHT</div>
           <div className="NIGHT-text-FIRST">NIGHT</div>
           <div className="whole-ufc-belt">
             <div className="overlap-group">
-              <img className="ufc-belt-FIRST-PAGE" alt="Ufc belt FIRST PAGE" src={ufcBelt} />
+              <img className="ufc-belt-FIRST-PAGE" src={ufcBelt} alt="UFC Belt" />
               <div className="streaming-nav-bar">
                 <div className="div">
                   <div className="streaming-nav-bar-2" />
-                  <img className="streaming-icon-and" alt="Streaming icon and" src={streamingIcon} />
+                  <img className="streaming-icon-and" src={streamingIcon} alt="Streaming Icon" />
                 </div>
               </div>
               <div className="catering-nav-bar">
                 <div className="overlap-2">
                   <div className="catering-nav-bar-box" />
-                  <img className="catering-icon-and" alt="Catering icon and" src={cateringIcon} />
+                  <img className="catering-icon-and" src={cateringIcon} alt="Catering Icon" />
                 </div>
               </div>
               <div className="opinions-nav-bar">
                 <div className="overlap-2">
                   <div className="opinions-nav-bar-box" />
-                  <img className="opinions-icon-and" alt="Opinions icon and" src={opinionsIcon} />
+                  <img className="opinions-icon-and" src={opinionsIcon} alt="Opinions Icon" />
                 </div>
               </div>
               <div className="trending-nav-bar">
                 <div className="overlap-3">
-                  <div className="opinions-nav-bar-box" />
-                  <img className="trending-icon-and" alt="Trending icon and" src={trendingIcon} />
+                  <div className="trending-nav-bar-box" />
+                  <img className="trending-icon-and" src={trendingIcon} alt="Trending Icon" />
                 </div>
               </div>
             </div>
           </div>
           <div className="notfication-footer">
-            <img className="send-invite-send" alt="Send invite send" src={sendInviteIcon} />
-            <img className="set-reminder-on" alt="Set reminder on" src={setReminderIcon} />
+            <img className="send-invite-send" src={sendInviteIcon} alt="Send Invite Icon" />
+            <img className="set-reminder-on" src={setReminderIcon} alt="Set Reminder Icon" />
           </div>
         </div>
       </div>
