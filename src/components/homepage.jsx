@@ -4,7 +4,6 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-
 // Helper function to create unique event IDs
 const createEventId = () => String(Date.now() + Math.random());
 
@@ -51,7 +50,8 @@ export const HomePage = () => {
         <div className="overlap">
           <img className="UFC-RING-PIC-first" alt="Ufc RING PIC first" src="UFC-RING-PIC-3-first-page-background.png" />
           <img className="left-ufc-laughing" alt="Left ufc laughing" src="left-ufc-laughing-guy-2.png" />
-          <img className="right-ufc-laughing" alt="Right ufc laughing" src="right-ufc-laughing-guy-1.png" />
+          <img className="right-ufc-laughing" alt="Right ufc laughing" src="../assets/HOMEPAGE/right-ufc-laughing.png"
+ />
           <div className="FIGHT-text-FIRST">FIGHT</div>
           <div className="NIGHT-text-FIRST">NIGHT</div>
           <div className="whole-ufc-belt">
