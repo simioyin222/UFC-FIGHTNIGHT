@@ -1,21 +1,27 @@
 .first-page-home-page {
+  position: relative; /* Ensure this is a positioned container for child absolutes */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   width: 100%;
-  height: 100vh; /* Adjust height as per content or full-screen */
+  height: 100vh;
+  z-index: 0; 
 }
 
 .calendar-container {
   position: absolute;
-  top: 50%;  /* Centering vertically */
-  left: 50%; /* Centering horizontally */
+  top: 50%;  
+  left: 50%; 
   transform: translate(-50%, -50%);
-  width: 80%; /* Adjust based on your design preference */
-  max-width: 600px; /* Ensuring it does not get too large on wider screens */
-  z-index: 2; /* Higher index to overlay on the background */
+  width: 50%; /* Further reduced for a more square appearance */
+  max-width: 300px; /* Smaller max-width for a more compact layout */
+  aspect-ratio: 1 / 1; /* Ensures the width and height are the same */
+  background-color: white; /* Example background color */
+  color: black; /* Sets the default text color */
+  z-index: 2;
+  padding: 10px; /* Optional padding to help with visual spacing */
+  border-radius: 10px; /* Optional rounded corners */
 }
 
 .first-page-home-page .overlap-wrapper {
@@ -39,6 +45,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1; /* Background lowest */
 }
 
 .first-page-home-page .left-ufc-laughing,
@@ -50,11 +57,11 @@
 }
 
 .first-page-home-page .left-ufc-laughing {
-  left: 5%; /* Adjust based on your design */
+  left: 5%; /* Adjust based on your device */
 }
 
 .first-page-home-page .right-ufc-laughing {
-  right: 5%; /* Adjust based on your design */
+  right: 5%; /* Adjust based on your device */
 }
 
 .first-page-home-page .FIGHT-text-FIRST {
@@ -63,14 +70,16 @@
   font-family: "Keania One-Regular", Helvetica;
   font-size: 36px;
   font-weight: 400;
-  left: 41px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 6px;
+  z-index: 999; /* High z-index to ensure it's on top */
+  left: 41px; /* Adjust as needed */
+  top: -0%; /* Adjust for visibility */
   width: 114px;
 }
+
 
 .first-page-home-page .NIGHT-text-FIRST {
   -webkit-text-stroke: 1px #000000;
@@ -78,14 +87,16 @@
   font-family: "Keania One-Regular", Helvetica;
   font-size: 36px;
   font-weight: 400;
-  left: 276px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 6px;
+  z-index: 999; /* High z-index to ensure it's on top */
+  left: 276px; /* Adjust as needed */
+  top: -2%; /* Match FIGHT text */
   width: 129px;
 }
+
 
 .first-page-home-page .whole-ufc-belt {
   height: 204px;
@@ -259,4 +270,11 @@
   position: absolute;
   top: 0;
   width: 154px;
+}
+
+.first-page-home-page .left-ufc-laughing,
+.first-page-home-page .right-ufc-laughing,
+.first-page-home-page .whole-ufc-belt,
+.first-page-home-page .notfication-footer {
+  z-index: 10; /* Above background, below text */
 }
