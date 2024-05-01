@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/HomePage.css";
 import ufcRingPic from '../assets/HOMEPAGE/UFC-RING-PIC-3-first-page-background.png';
 import leftUfcLaughing from '../assets/HOMEPAGE/left-ufc-laughing-guy-2.png';
@@ -14,29 +14,28 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import EmailModal from './EmailModal'; // Import the modal component
 
-// Helper function to create unique event IDs
-const createEventId = () => String(Date.now() + Math.random());
+const HomePage = () => {
+  const [showModal, setShowModal] = useState(false);
 
-// Event selection handler
-const handleDateSelect = (selectInfo) => {
-  let title = prompt('Please enter a new title for your event');
-  let calendarApi = selectInfo.view.calendar;
+  const handleDateSelect = (selectInfo) => {
+    const title = prompt('Please enter a new title for your event');
+    const calendarApi = selectInfo.view.calendar;
 
-  calendarApi.unselect(); // Clear date selection
+    calendarApi.unselect(); // Clear date selection
 
-  if (title) {
-    calendarApi.addEvent({
-      id: createEventId(),
-      title,
-      start: selectInfo.startStr,
-      end: selectInfo.endStr,
-      allDay: selectInfo.allDay
-    });
-  }
-};
+    if (title) {
+      calendarApi.addEvent({
+        id: String(Date.now() + Math.random()), // Create unique event IDs here
+        title,
+        start: selectInfo.startStr,
+        end: selectInfo.endStr,
+        allDay: selectInfo.allDay
+      });
+    }
+  };
 
-export const HomePage = () => {
   return (
     <div className="first-page-home-page">
       <img className="UFC-RING-PIC-first" src={ufcRingPic} alt="UFC Ring Background" />
@@ -53,7 +52,7 @@ export const HomePage = () => {
           selectMirror={true}
           dayMaxEvents={true}
           weekends={true}
-          events={[ // Static events for demonstration
+          events={[
             { title: 'Event 1', start: '2024-04-20', end: '2024-04-22' },
             { title: 'Event 2', start: '2024-04-23', allDay: true }
           ]}
@@ -96,7 +95,8 @@ export const HomePage = () => {
             </div>
           </div>
           <div className="notfication-footer">
-            <img className="send-invite-send" src={sendInviteIcon} alt="Send Invite Icon" />
+            <img className="send-invite-send" src={sendInviteIcon} alt="Send Invite Icon" onClick={() => setShowModal(true)} />
+            <EmailModal isOpen={showModal} onClose={() => setShowModal(false)} />
             <img className="set-reminder-on" src={setReminderIcon} alt="Set Reminder Icon" />
           </div>
         </div>
@@ -104,3 +104,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;
