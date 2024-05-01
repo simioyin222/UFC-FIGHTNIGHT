@@ -48,20 +48,26 @@
   z-index: 1; /* Background lowest */
 }
 
-.first-page-home-page .left-ufc-laughing,
 .first-page-home-page .right-ufc-laughing {
   position: absolute;
-  width: 10%; /* Responsive width */
-  height: auto;
-  top: 35%; /* Adjust vertical position as needed */
+  width: 4%; /* Smaller and more responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 18%; /* Position them higher up on the page */
 }
 
 .first-page-home-page .left-ufc-laughing {
-  left: 5%; /* Adjust based on your device */
+  position: absolute;
+  width: 4.3%; /* Smaller and more responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 18.2%; /* Position them higher up on the page */
+}
+
+.first-page-home-page .left-ufc-laughing {
+  left: 40%; /* Adjust for better horizontal positioning */
 }
 
 .first-page-home-page .right-ufc-laughing {
-  right: 5%; /* Adjust based on your device */
+  right: 40%; /* Adjust for better horizontal positioning */
 }
 
 .first-page-home-page .FIGHT-text-FIRST {
@@ -277,4 +283,34 @@
 .first-page-home-page .whole-ufc-belt,
 .first-page-home-page .notfication-footer {
   z-index: 10; /* Above background, below text */
+}
+
+.fc-toolbar {
+  font-size: 12px; /* Smaller font size for the toolbar items */
+  padding: 5px 10px; /* Reduce padding to make the toolbar smaller */
+  text-align: center; /* Center toolbar content */
+}
+
+.fc-daygrid-more-link.fc-more-link {
+  color: #ffffff; /* Choose a color that stands out */
+  background-color: #007BFF; /* A distinct background color for better visibility */
+  border-radius: 5px; /* Rounded corners for a smoother look */
+  padding: 2px 6px; /* Adequate padding for easier interaction */
+  font-size: 12px; /* Appropriate font size for visibility */
+  text-align: center; /* Center the text inside the link */
+  display: inline-block; /* Ensures the link does not stretch unnecessarily */
+  position: absolute; /* Absolute positioning within the day cell */
+  bottom: 2px; /* Adjust distance from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center alignment fix */
+}
+
+.fc-daygrid-day-top {
+  position: relative;
+  padding-bottom: 17px;
+}
+
+.fc-daygrid-day-number{
+  font-size: 10px;
+  font-weight: 600;
 }
