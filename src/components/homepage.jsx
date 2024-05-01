@@ -89,8 +89,8 @@ export const HomePage = () => {
               </div>
               <div className="trending-nav-bar">
                 <div className="overlap-3">
-                  <div className="trending-nav-bar-box" />
-                  <img className="trending-icon-and" src={trendingIcon} alt="Trending Icon" />
+                  <div className="opinions-nav-bar-box" />
+                  <img className="opinions-icon-and" src={trendingIcon} alt="Trending Icon" />
                 </div>
               </div>
             </div>

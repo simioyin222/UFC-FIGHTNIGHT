@@ -6,12 +6,12 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: white;
 }
 
 .calendar-container {
   position: absolute;
-  top: 50%;  
+  top: 60%;  
   left: 50%; 
   transform: translate(-50%, -50%);
   width: 50%; /* Further reduced for a more square appearance */
@@ -51,14 +51,14 @@
   position: absolute;
   width: 4.2%; /* Smaller and more responsive width */
   height: auto; /* Maintain aspect ratio */
-  top: 18%; /* Position them higher up on the page */
+  top: 30%; /* Position them higher up on the page */
 }
 
 .first-page-home-page .left-ufc-laughing {
   position: absolute;
   width: 4.5%; /* Smaller and more responsive width */
   height: auto; /* Maintain aspect ratio */
-  top: 18.2%; /* Position them higher up on the page */
+  top: 30.2%; /* Position them higher up on the page */
 }
 
 .first-page-home-page .left-ufc-laughing {
@@ -95,8 +95,8 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  left: 276px; /* Adjust as needed */
-  top: -2%; /* Match FIGHT text */
+  left: 285px; /* Adjust as needed */
+  top: 0.1%; /* Match FIGHT text */
   width: 129px;
 }
 
@@ -270,7 +270,7 @@
 
 .first-page-home-page img.set-reminder-on {
   position: absolute;
-  bottom: 750px; /* Adjust as needed */
+  bottom: 10px; /* Adjust as needed */
   left: 20%; /* Center horizontally */
   transform: translateX(-50%); /* Ensures it is centered horizontally */
   z-index: 10; /* Ensuring it is above the background */
