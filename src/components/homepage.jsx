@@ -96,7 +96,7 @@ const HomePage = () => {
           </div>
           <div className="notfication-footer">
             <img className="send-invite-send" src={sendInviteIcon} alt="Send Invite Icon" onClick={() => setShowModal(true)} />
-            <EmailModal isOpen={showModal} onClose={() => setShowModal(false)} />
+            {showModal && <EmailModal isOpen={showModal} onClose={() => setShowModal(false)} />}
             <img className="set-reminder-on" src={setReminderIcon} alt="Set Reminder Icon" />
           </div>
         </div>
