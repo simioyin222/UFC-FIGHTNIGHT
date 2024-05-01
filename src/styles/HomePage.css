@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  z-index: 0; 
+  background-color: black;
 }
 
 .calendar-container {
@@ -19,7 +19,6 @@
   aspect-ratio: 1 / 1; /* Ensures the width and height are the same */
   background-color: white; /* Example background color */
   color: black; /* Sets the default text color */
-  z-index: 2;
   padding: 10px; /* Optional padding to help with visual spacing */
   border-radius: 10px; /* Optional rounded corners */
 }
@@ -38,26 +37,26 @@
   width: 447px;
 }
 
-.first-page-home-page .UFC-RING-PIC-3-first-page-background {
+.first-page-home-page img.UFC-RING-PIC-first {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 20;
+  width: 21.7%;
   height: 100%;
   object-fit: cover;
-  z-index: 1; /* Background lowest */
+  z-index: 0
 }
 
 .first-page-home-page .right-ufc-laughing {
   position: absolute;
-  width: 4%; /* Smaller and more responsive width */
+  width: 4.2%; /* Smaller and more responsive width */
   height: auto; /* Maintain aspect ratio */
   top: 18%; /* Position them higher up on the page */
 }
 
 .first-page-home-page .left-ufc-laughing {
   position: absolute;
-  width: 4.3%; /* Smaller and more responsive width */
+  width: 4.5%; /* Smaller and more responsive width */
   height: auto; /* Maintain aspect ratio */
   top: 18.2%; /* Position them higher up on the page */
 }
@@ -67,7 +66,7 @@
 }
 
 .first-page-home-page .right-ufc-laughing {
-  right: 40%; /* Adjust for better horizontal positioning */
+  right: 40.3%; /* Adjust for better horizontal positioning */
 }
 
 .first-page-home-page .FIGHT-text-FIRST {
@@ -80,7 +79,6 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  z-index: 999; /* High z-index to ensure it's on top */
   left: 41px; /* Adjust as needed */
   top: -0%; /* Adjust for visibility */
   width: 114px;
@@ -97,7 +95,6 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  z-index: 999; /* High z-index to ensure it's on top */
   left: 276px; /* Adjust as needed */
   top: -2%; /* Match FIGHT text */
   width: 129px;
@@ -260,6 +257,7 @@
   position: absolute;
   top: 655px;
   width: 335px;
+  z-index: 10;
 }
 
 .first-page-home-page .send-invite-send {
@@ -270,19 +268,20 @@
   width: 144px;
 }
 
-.first-page-home-page .set-reminder-on {
-  height: 151px;
-  left: 0;
+.first-page-home-page img.set-reminder-on {
   position: absolute;
-  top: 0;
-  width: 154px;
+  bottom: 750px; /* Adjust as needed */
+  left: 20%; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures it is centered horizontally */
+  z-index: 10; /* Ensuring it is above the background */
+  /* Add additional styles for visibility, size, etc. */
 }
 
-.first-page-home-page .left-ufc-laughing,
-.first-page-home-page .right-ufc-laughing,
 .first-page-home-page .whole-ufc-belt,
-.first-page-home-page .notfication-footer {
-  z-index: 10; /* Above background, below text */
+.first-page-home-page .notfication-footer,
+.first-page-home-page .send-invite-send,
+.first-page-home-page .set-reminder-on {
+  position: absolute; /* Confirm positioning */
 }
 
 .fc-toolbar {
@@ -313,4 +312,14 @@
 .fc-daygrid-day-number{
   font-size: 10px;
   font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .first-page-home-page .left-ufc-laughing,
+  .first-page-home-page .right-ufc-laughing {
+    width: 6%; /* Slightly larger on smaller screens */
+    top: 15%; /* Adjusted top position for better visibility */
+    left: 30%; /* Adjust left for left image if needed */
+    right: 30%; /* Adjust right for right image if needed */
+  }
 }
