@@ -27,7 +27,6 @@ export const StreamingPage = () => {
                     <img src={houseIconRedMd} alt="House icon red md" className="house-icon-red-md" />
                       <div className="rectangle" />
                       <div className="ellipse" />
-                      <div className="text-wrapper">Home</div>
                     </div>
                   </div>
                 </div>
@@ -37,7 +36,6 @@ export const StreamingPage = () => {
                   <div className="catering-nav-bar-box" />
                   <div className="overlap-group-wrapper">
                     <div className="overlap-group-3">
-                      <div className="text-wrapper">Catering</div>
                       <img src={cateringIcon} alt="Catering" className="catering-icon" />
                     </div>
                   </div>
@@ -48,7 +46,6 @@ export const StreamingPage = () => {
                   <div className="trending-nav-bar-box" />
                   <div className="overlap-group-wrapper">
                     <div className="overlap-group-3">
-                      <div className="text-wrapper">Trending</div>
                       <img src={trendingIcon} alt="Trending" className="trending-icon" />
                     </div>
                   </div>
@@ -59,7 +56,6 @@ export const StreamingPage = () => {
                   <div className="opinions-nav-bar-box" />
                   <div className="opinions-icon-and">
                     <div className="overlap-group-4">
-                      <div className="text-wrapper-2">Opinions</div>
                       <img src={opinionsIcon} alt="Opinions" className="opinions-icon" />
                     </div>
                   </div>

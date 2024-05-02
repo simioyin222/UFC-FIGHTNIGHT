@@ -21,7 +21,7 @@
 }
 
 .streaming-page img.UFC-RING-PIC-first {
-  height: 812px;
+  height: px;
   left: 36px;
   object-fit: cover;
   position: absolute;
@@ -126,31 +126,13 @@
 }
 
 .streaming-page img.house-icon-red-md {
-  height: 41px;
-  left: 21px;
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 23px;
-  width: 43px;
+  top: 0;
+  width: 90px;
 }
 
-.streaming-page div.rectangle {
-  background-color: #ffffff;
-  height: 20px;
-  left: 37px;
-  position: absolute;
-  top: 41px;
-  width: 11px;
-}
-
-.streaming-page div.ellipse {
-  background-color: #000000;
-  border-radius: 1.13px/1.17px;
-  height: 2px;
-  left: 46px;
-  position: absolute;
-  top: 50px;
-  width: 2px;
-}
 
 .streaming-page .text-wrapper {
   color: #d20a0a;
@@ -201,13 +183,6 @@
   width: 84px;
 }
 
-.streaming-page .catering-icon {
-  height: 46px;
-  left: 15px;
-  position: absolute;
-  top: 20px;
-  width: 55px;
-}
 
 .streaming-page .trending-nav-bar {
   height: 69px;
@@ -230,11 +205,11 @@
 }
 
 .streaming-page img.trending-icon {
-  height: 45px;
-  left: 7px;
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 21px;
-  width: 69px;
+  top: 0;
+  width: 90px;
 }
 
 .streaming-page .opinions-nav-bar {
@@ -263,7 +238,7 @@
   width: 80px;
 }
 
-.streaming-page .opinions-icon-and {
+.streaming-page img.opinions-icon {
   height: 66px;
   left: 0;
   position: absolute;
