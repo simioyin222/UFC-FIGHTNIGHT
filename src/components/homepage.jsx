@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/HomePage.css";
 import ufcRingPic from '../assets/HOMEPAGE/UFC-RING-PIC-3-first-page-background.png';
 import leftUfcLaughing from '../assets/HOMEPAGE/left-ufc-laughing-guy-2.png';
@@ -18,6 +19,7 @@ import EmailModal from './EmailModal';
 
 const HomePage = () => {
     const [showModal, setShowModal] = useState(false);
+    const navigate = useNavigate();
 
     const handleDateSelect = (selectInfo) => {
         const title = prompt('Please enter a new title for your event');
@@ -61,6 +63,10 @@ const HomePage = () => {
     //         console.error('Error sending notification:', error);
     //     });
     // };
+
+    const navigateToStreaming = () => {
+        navigate('/streaming');  // Navigate to StreamingPage
+    };
     
     return (
         <div className="first-page-home-page">
@@ -97,7 +103,7 @@ const HomePage = () => {
                             <div className="streaming-nav-bar">
                                 <div className="div">
                                     <div className="streaming-nav-bar-2" />
-                                    <img className="streaming-icon-and" src={streamingIcon} alt="Streaming Icon" />
+                                    <img className="streaming-icon-and" src={streamingIcon} alt="Streaming Icon" onClick={navigateToStreaming} />
                                 </div>
                             </div>
                             <div className="catering-nav-bar">

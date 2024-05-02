@@ -20,7 +20,7 @@
   width: 447px;
 }
 
-.streaming-page .UFC-RING-AND {
+.streaming-page img.UFC-RING-PIC-first {
   height: 812px;
   left: 36px;
   object-fit: cover;
@@ -74,7 +74,7 @@
   width: 381px;
 }
 
-.streaming-page .ufc-belt-STREAMING {
+.streaming-page img.ufc-belt-FIRST-PAGE {
   height: 204px;
   left: 4px;
   object-fit: cover;
@@ -125,7 +125,7 @@
   width: 84px;
 }
 
-.streaming-page .house-icon-red-md {
+.streaming-page img.house-icon-red-md {
   height: 41px;
   left: 21px;
   position: absolute;
@@ -133,7 +133,7 @@
   width: 43px;
 }
 
-.streaming-page .rectangle {
+.streaming-page div.rectangle {
   background-color: #ffffff;
   height: 20px;
   left: 37px;
@@ -142,7 +142,7 @@
   width: 11px;
 }
 
-.streaming-page .ellipse {
+.streaming-page div.ellipse {
   background-color: #000000;
   border-radius: 1.13px/1.17px;
   height: 2px;
@@ -229,7 +229,7 @@
   width: 80px;
 }
 
-.streaming-page .trending-icon {
+.streaming-page img.trending-icon {
   height: 45px;
   left: 7px;
   position: absolute;
