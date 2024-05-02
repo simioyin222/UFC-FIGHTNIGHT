@@ -21,6 +21,7 @@
   color: black; /* Sets the default text color */
   padding: 10px; /* Optional padding to help with visual spacing */
   border-radius: 10px; /* Optional rounded corners */
+  z-index: 8;
 }
 
 .first-page-home-page .overlap-wrapper {
@@ -334,6 +335,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9;
 }
 .modal-content {
   background: white;
