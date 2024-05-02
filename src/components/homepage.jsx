@@ -36,31 +36,31 @@ const HomePage = () => {
         }
     };
 
-    const sendNotification = () => {
-        const postData = {
-            token: "user_device_token_here",  // Ensure this token is correctly fetched or defined
-            title: "Event Reminder",
-            body: "Don't forget your upcoming event!"
-        };
+    // const sendNotification = () => {
+    //     const postData = {
+    //         token: "user_device_token_here",  // Ensure this token is correctly fetched or defined
+    //         title: "Event Reminder",
+    //         body: "Don't forget your upcoming event!"
+    //     };
     
-        fetch('http://localhost:3000/send-notification', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(postData),
-        })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`Network response was not ok ${response.statusText}`);
-          }
-          return response.json();
-        })
-        .then(data => console.log('Notification sent successfully:', data))
-        .catch((error) => {
-            console.error('Error sending notification:', error);
-        });
-    };
+    //     fetch('http://localhost:3000/send-notification', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify(postData),
+    //     })
+    //     .then(response => {
+    //       if (!response.ok) {
+    //         throw new Error(`Network response was not ok ${response.statusText}`);
+    //       }
+    //       return response.json();
+    //     })
+    //     .then(data => console.log('Notification sent successfully:', data))
+    //     .catch((error) => {
+    //         console.error('Error sending notification:', error);
+    //     });
+    // };
     
     return (
         <div className="first-page-home-page">
@@ -123,7 +123,7 @@ const HomePage = () => {
                     <div className="notfication-footer">
                         <img className="send-invite-send" src={sendInviteIcon} alt="Send Invite Icon" onClick={() => setShowModal(true)} />
                         {showModal && <EmailModal isOpen={showModal} onClose={() => setShowModal(false)} />}
-                        <img className="set-reminder-on" src={setReminderIcon} alt="Set Reminder Icon" onClick={sendNotification} />
+                        <img className="set-reminder-on" src={setReminderIcon} alt="Set Reminder Icon" />
                     </div>
                 </div>
             </div>
