@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import emailjs from 'emailjs-com';
 
 // Initialize EmailJS with your user ID
-emailjs.init('your_user_id'); // Replace 'your_user_id' with your actual EmailJS user ID
+emailjs.init('your_user_id'); // Replace 'your_user_id' with your actual EmailJS API KEY
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

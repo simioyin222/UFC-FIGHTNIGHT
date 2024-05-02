@@ -1,5 +1,5 @@
 .first-page-home-page {
-  position: relative; /* Ensure this is a positioned container for child absolutes */
+  position: relative; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,24 +50,24 @@
 
 .first-page-home-page .right-ufc-laughing {
   position: absolute;
-  width: 4.2%; /* Smaller and more responsive width */
-  height: auto; /* Maintain aspect ratio */
-  top: 30%; /* Position them higher up on the page */
+  width: 4.2%; 
+  height: auto;
+  top: 30%;
 }
 
 .first-page-home-page .left-ufc-laughing {
   position: absolute;
-  width: 4.5%; /* Smaller and more responsive width */
-  height: auto; /* Maintain aspect ratio */
-  top: 30.2%; /* Position them higher up on the page */
+  width: 4.5%; 
+  height: auto;
+  top: 30.2%; 
 }
 
 .first-page-home-page .left-ufc-laughing {
-  left: 40%; /* Adjust for better horizontal positioning */
+  left: 40%;
 }
 
 .first-page-home-page .right-ufc-laughing {
-  right: 40.3%; /* Adjust for better horizontal positioning */
+  right: 40.3%;
 }
 
 .first-page-home-page .FIGHT-text-FIRST {
@@ -80,7 +80,7 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  left: 41px; /* Adjust as needed */
+  left: 41px; 
   top: -0%; /* Adjust for visibility */
   width: 114px;
 }
@@ -96,7 +96,7 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  left: 285px; /* Adjust as needed */
+  left: 285px; 
   top: 0.1%; /* Match FIGHT text */
   width: 129px;
 }
@@ -271,18 +271,18 @@
 
 .first-page-home-page img.set-reminder-on {
   position: absolute;
-  bottom: 10px; /* Adjust as needed */
-  left: 20%; /* Center horizontally */
-  transform: translateX(-50%); /* Ensures it is centered horizontally */
+  bottom: 10px; 
+  left: 20%; 
+  transform: translateX(-50%); 
   z-index: 10; /* Ensuring it is above the background */
-  /* Add additional styles for visibility, size, etc. */
+ 
 }
 
 .first-page-home-page .whole-ufc-belt,
 .first-page-home-page .notfication-footer,
 .first-page-home-page .send-invite-send,
 .first-page-home-page .set-reminder-on {
-  position: absolute; /* Confirm positioning */
+  position: absolute; 
 }
 
 .fc-toolbar {
@@ -318,10 +318,10 @@
 @media (max-width: 600px) {
   .first-page-home-page .left-ufc-laughing,
   .first-page-home-page .right-ufc-laughing {
-    width: 6%; /* Slightly larger on smaller screens */
-    top: 15%; /* Adjusted top position for better visibility */
-    left: 30%; /* Adjust left for left image if needed */
-    right: 30%; /* Adjust right for right image if needed */
+    width: 6%; 
+    top: 15%; 
+    left: 30%; 
+    right: 30%; 
   }
 }
 

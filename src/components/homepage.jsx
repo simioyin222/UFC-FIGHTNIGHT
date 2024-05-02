@@ -14,7 +14,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import EmailModal from './EmailModal'; // Import the modal component
+import EmailModal from './EmailModal'; 
 
 const HomePage = () => {
   const [showModal, setShowModal] = useState(false);

@@ -9,7 +9,7 @@ const EmailModal = ({ isOpen, onClose }) => {
         emailjs.sendForm('service_fqy8hrb', 'template_1t0tpp8', e.target, 'Xaoc-lp-nmD-BOtBy')
             .then((result) => {
                 console.log('Email Sent!', result.text);
-                onClose(); // Close the modal after sending the email
+                onClose(); 
             }, (error) => {
                 console.log('Failed to send email.', error.text);
             });
