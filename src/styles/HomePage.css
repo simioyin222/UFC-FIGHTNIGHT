@@ -275,7 +275,6 @@
   left: 20%; 
   transform: translateX(-50%); 
   z-index: 10; /* Ensuring it is above the background */
- 
 }
 
 .first-page-home-page .whole-ufc-belt,
