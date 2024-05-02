@@ -6,7 +6,7 @@ const EmailModal = ({ isOpen, onClose }) => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('your_service_id', 'your_template_id', e.target, 'your_user_id')
+        emailjs.sendForm('service_fqy8hrb', 'template_1t0tpp8', e.target, 'Xaoc-lp-nmD-BOtBy')
             .then((result) => {
                 console.log('Email Sent!', result.text);
                 onClose(); // Close the modal after sending the email
@@ -20,12 +20,16 @@ const EmailModal = ({ isOpen, onClose }) => {
             <div className="modal-content">
                 <span className="close" onClick={onClose}>&times;</span>
                 <form onSubmit={sendEmail}>
+                    <label>To Name:</label>
+                    <input type="text" name="to_name" required />
+                    <label>From Name:</label>
+                    <input type="text" name="from_name" required />
                     <label>Email:</label>
                     <input type="email" name="user_email" required />
-                    <label>Message:</label>
-                    <textarea name="message" required />
                     <label>Event Date:</label>
                     <input type="date" name="event_date" required />
+                    <label>Message:</label>
+                    <textarea name="message" required />
                     <button type="submit">Send Invite</button>
                 </form>
             </div>
