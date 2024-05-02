@@ -38,7 +38,7 @@ const HomePage = () => {
 
     const sendNotification = () => {
         const postData = {
-            token: "user_device_token_here",  // Dynamically determine this or fetch from storage
+            token: "user_device_token_here",  // Ensure this token is correctly fetched or defined
             title: "Event Reminder",
             body: "Don't forget your upcoming event!"
         };
@@ -52,7 +52,7 @@ const HomePage = () => {
         })
         .then(response => {
           if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
+            throw new Error(`Network response was not ok ${response.statusText}`);
           }
           return response.json();
         })
@@ -61,7 +61,7 @@ const HomePage = () => {
             console.error('Error sending notification:', error);
         });
     };
-
+    
     return (
         <div className="first-page-home-page">
             <img className="UFC-RING-PIC-first" src={ufcRingPic} alt="UFC Ring Background" />
