@@ -38,11 +38,11 @@ const HomePage = () => {
 
     const sendNotification = () => {
         const postData = {
-            token: "user_device_token_here",  // This token should be dynamically determined or securely stored
+            token: "user_device_token_here",  // Dynamically determine this or fetch from storage
             title: "Event Reminder",
             body: "Don't forget your upcoming event!"
         };
-
+    
         fetch('http://localhost:3000/send-notification', {
             method: 'POST',
             headers: {
@@ -50,7 +50,12 @@ const HomePage = () => {
             },
             body: JSON.stringify(postData),
         })
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
         .then(data => console.log('Notification sent successfully:', data))
         .catch((error) => {
             console.error('Error sending notification:', error);
