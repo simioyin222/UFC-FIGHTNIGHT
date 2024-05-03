@@ -71,7 +71,15 @@ const HomePage = () => {
     const navigateToCatering = () => {
         navigate('/catering');  // Navigate to CateringPage
     };
-    
+
+    const navigateToTrending = () => {
+        navigate('/trending');  // Navigate to TrendingPage
+      };
+
+      const navigateToVoting = () => {
+        navigate('/voting');  // Navigate to VotingPage 
+      };
+
     return (
         <div className="first-page-home-page">
             <img className="UFC-RING-PIC-first" src={ufcRingPic} alt="UFC Ring Background" />
@@ -119,13 +127,13 @@ const HomePage = () => {
                             <div className="opinions-nav-bar">
                                 <div className="overlap-2">
                                     <div className="opinions-nav-bar-box" />
-                                    <img className="opinions-icon-and" src={opinionsIcon} alt="Opinions Icon" />
+                                    <img className="opinions-icon-and" src={opinionsIcon} alt="Opinions Icon" onClick={navigateToVoting} />
                                 </div>
                             </div>
                             <div className="trending-nav-bar">
                                 <div className="overlap-3">
                                     <div className="opinions-nav-bar-box" />
-                                    <img className="opinions-icon-and" src={trendingIcon} alt="Trending Icon" />
+                                    <img className="opinions-icon-and" src={trendingIcon} alt="Trending Icon" onClick={navigateToTrending} />
                                 </div>
                             </div>
                         </div>

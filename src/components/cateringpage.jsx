@@ -1,7 +1,32 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "../styles/CateringPage.css";
+import ufcRingPic from '../assets/CATERINGPAGE/UFC-RING-AND-AUDINCE-PIC-2-catering-page-background.png';
+import ufcBelt from '../assets/CATERINGPAGE/ufc-belt-STREAMING-PAGE.png';
+import opinionsIcon from '../assets/CATERINGPAGE/Opinions-icon-and-text-catering-page.png';
+import trendingIcon from '../assets/CATERINGPAGE/trending-icon-and-text-catering-page.png';
+import houseIconRedMd from'../assets/CATERINGPAGE/home-icon-and-title-streaming-page.png';
+import streamingIcon from '../assets/CATERINGPAGE/streaming-icon-and-text-catering-page.png';
 
 export const CateringPage = () => {
+  const navigate = useNavigate();
+
+  const navigateToStreaming = () => {
+    navigate('/streaming');  // Navigate to StreamingPage
+};
+
+const navigateHome = () => {
+  navigate('/'); // Navigate to HomePage
+};
+
+const navigateToTrending = () => {
+    navigate('/trending');  // Navigate to TrendingPage
+  };
+
+  const navigateToVoting = () => {
+    navigate('/voting');  // Navigate to TrendingPage
+  };
+
   return (
     <div className="catering-page">
       <div className="overlap-wrapper">
@@ -9,20 +34,19 @@ export const CateringPage = () => {
           <img
             className="UFC-RING-AND-AUDINCE"
             alt="Ufc RING AND AUDINCE"
-            src="UFC-RING-AND-AUDINCE-PIC-2-catering-page-background.png"
+            src={ufcRingPic}
           />
           <div className="FIGHT-catering-page">FIGHT</div>
           <div className="NIGHT-catering-page">NIGHT</div>
           <div className="whole-ufc-belt">
             <div className="overlap-group">
-              <img className="ufc-belt-STREAMING" alt="Ufc belt STREAMING" src="ufc-belt-STREAMING-PAGE.png" />
+              <img className="ufc-belt-STREAMING" alt="Ufc belt STREAMING" src={ufcBelt} />
               <div className="streaming-nav-bar">
                 <div className="div">
                   <div className="streaming-nav-bar-2" />
                   <div className="streaming-icon-and">
                     <div className="overlap-group-2">
-                      <div className="text-wrapper">Streaming</div>
-                      <img className="streaming-icon" alt="Streaming icon" src="streaming-icon.png" />
+                      <img className="streaming-icon" alt="Streaming icon" src={streamingIcon} onClick={navigateToStreaming} />
                     </div>
                   </div>
                 </div>
@@ -32,10 +56,9 @@ export const CateringPage = () => {
                   <div className="home-nav-bar-box" />
                   <div className="home-icon-and-title">
                     <div className="overlap-group-3">
-                      <img className="house-icon-red-md" alt="House icon red md" src="house-icon-red-md-1.png" />
+                      <img className="house-icon-red-md" alt="House icon red md" src={houseIconRedMd} onClick={navigateHome} />
                       <div className="rectangle" />
                       <div className="ellipse" />
-                      <div className="text-wrapper">Home</div>
                     </div>
                   </div>
                 </div>
@@ -45,8 +68,7 @@ export const CateringPage = () => {
                   <div className="trending-nav-bar-box" />
                   <div className="trending-icon-and">
                     <div className="overlap-group-4">
-                      <div className="text-wrapper">Trending</div>
-                      <img className="trending-icon" alt="Trending icon" src="trending-icon.png" />
+                      <img className="trending-icon" alt="Trending icon" src={trendingIcon} onClick={navigateToTrending} />
                     </div>
                   </div>
                 </div>
@@ -56,8 +78,7 @@ export const CateringPage = () => {
                   <div className="opinions-nav-bar-box" />
                   <div className="opinions-icon-and">
                     <div className="overlap-group-5">
-                      <div className="text-wrapper-2">Opinions</div>
-                      <img className="opinions-icon" alt="Opinions icon" src="opinions-icon.png" />
+                      <img className="opinions-icon" alt="Opinions icon" src={opinionsIcon} onClick={navigateToVoting} />
                     </div>
                   </div>
                 </div>

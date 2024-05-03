@@ -109,13 +109,6 @@
   width: 82px;
 }
 
-.trending-page .streaming-icon-and {
-  height: 78px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 112px;
-}
 
 .trending-page .overlap-group-2 {
   height: 78px;
@@ -139,12 +132,12 @@
   width: 86px;
 }
 
-.trending-page .streaming-icon {
-  height: 63px;
-  left: 2px;
+.trending-page img.streaming-icon {
+  height: 72px;
+  left: 0;
   position: absolute;
-  top: 15px;
-  width: 96px;
+  top: 0;
+  width: 93px;
 }
 
 .trending-page .catering-nav-bar {
@@ -173,13 +166,6 @@
   width: 80px;
 }
 
-.trending-page .catering-icon-and {
-  height: 66px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 86px;
-}
 
 .trending-page .overlap-group-3 {
   height: 66px;
@@ -202,12 +188,12 @@
   width: 84px;
 }
 
-.trending-page .catering-icon {
-  height: 46px;
-  left: 15px;
+.trending-page img.catering-icon {
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 20px;
-  width: 55px;
+  top: 0;
+  width: 84px;
 }
 
 .trending-page .home-nav-bar-button {
@@ -252,31 +238,12 @@
   width: 86px;
 }
 
-.trending-page .house-icon-red-md {
-  height: 45px;
-  left: 22px;
+.trending-page img.house-icon-red-md {
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 25px;
-  width: 44px;
-}
-
-.trending-page .rectangle {
-  background-color: #ffffff;
-  height: 22px;
-  left: 38px;
-  position: absolute;
-  top: 45px;
-  width: 12px;
-}
-
-.trending-page .ellipse {
-  background-color: #000000;
-  border-radius: 1.16px/1.27px;
-  height: 3px;
-  left: 47px;
-  position: absolute;
-  top: 54px;
-  width: 2px;
+  top: 0;
+  width: 90px;
 }
 
 .trending-page .opinions-nav-bar {
@@ -305,14 +272,6 @@
   width: 82px;
 }
 
-.trending-page .opinions-icon-and {
-  height: 72px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 92px;
-}
-
 .trending-page .overlap-group-5 {
   height: 72px;
   position: relative;
@@ -334,10 +293,10 @@
   width: 86px;
 }
 
-.trending-page .opinions-icon {
-  height: 48px;
+.trending-page img.opinions-icon {
+  height: 66px;
   left: 0;
   position: absolute;
-  top: 24px;
+  top: 0;
   width: 90px;
 }

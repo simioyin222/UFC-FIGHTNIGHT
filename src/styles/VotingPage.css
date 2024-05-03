@@ -109,7 +109,7 @@
   width: 80px;
 }
 
-.opinions-page-voting .streaming-icon-and {
+.opinions-page-voting img.streaming-icon {
   height: 72px;
   left: 0;
   position: absolute;
@@ -139,11 +139,11 @@
   width: 84px;
 }
 
-.opinions-page-voting .streaming-icon {
-  height: 58px;
-  left: 2px;
+.opinions-page-voting img.streaming-icon {
+  height: 72px;
+  left: 0;
   position: absolute;
-  top: 14px;
+  top: 0;
   width: 93px;
 }
 
@@ -187,12 +187,12 @@
   width: 84px;
 }
 
-.opinions-page-voting .catering-icon {
-  height: 46px;
-  left: 15px;
+.opinions-page-voting img.catering-icon {
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 20px;
-  width: 55px;
+  top: 0;
+  width: 84px;
 }
 
 .opinions-page-voting .trending-nav-bar {
@@ -215,12 +215,12 @@
   width: 80px;
 }
 
-.opinions-page-voting .trending-icon {
-  height: 45px;
-  left: 7px;
+.opinions-page-voting img.trending-icon {
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 21px;
-  width: 69px;
+  top: 0;
+  width: 90px;
 }
 
 .opinions-page-voting .home-nav-bar-button {
@@ -259,31 +259,12 @@
   width: 84px;
 }
 
-.opinions-page-voting .house-icon-red-md {
-  height: 41px;
-  left: 21px;
+.opinions-page-voting img.house-icon-red-md {
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 23px;
-  width: 43px;
-}
-
-.opinions-page-voting .rectangle {
-  background-color: #ffffff;
-  height: 20px;
-  left: 37px;
-  position: absolute;
-  top: 41px;
-  width: 11px;
-}
-
-.opinions-page-voting .ellipse {
-  background-color: #000000;
-  border-radius: 1.13px/1.17px;
-  height: 2px;
-  left: 46px;
-  position: absolute;
-  top: 50px;
-  width: 2px;
+  top: 0;
+  width: 90px;
 }
 
 .opinions-page-voting .vote-box-left {

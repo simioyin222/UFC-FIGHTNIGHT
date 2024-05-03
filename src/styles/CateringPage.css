@@ -109,12 +109,12 @@
   width: 82px;
 }
 
-.catering-page .streaming-icon-and {
-  height: 78px;
+.catering-page img.streaming-icon {
+  height: 72px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 112px;
+  width: 93px;
 }
 
 .catering-page .overlap-group-2 {
@@ -139,12 +139,12 @@
   width: 86px;
 }
 
-.catering-page .streaming-icon {
-  height: 63px;
-  left: 2px;
+.catering-page img.streaming-icon {
+  height: 72px;
+  left: 0;
   position: absolute;
-  top: 15px;
-  width: 96px;
+  top: 0;
+  width: 93px;
 }
 
 .catering-page .home-nav-bar-button {
@@ -190,30 +190,11 @@
 }
 
 .catering-page .house-icon-red-md {
-  height: 45px;
-  left: 22px;
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 25px;
-  width: 44px;
-}
-
-.catering-page .rectangle {
-  background-color: #ffffff;
-  height: 22px;
-  left: 38px;
-  position: absolute;
-  top: 45px;
-  width: 12px;
-}
-
-.catering-page .ellipse {
-  background-color: #000000;
-  border-radius: 1.16px/1.27px;
-  height: 3px;
-  left: 47px;
-  position: absolute;
-  top: 54px;
-  width: 2px;
+  top: 0;
+  width: 90px;
 }
 
 .catering-page .trending-nav-bar {
@@ -236,13 +217,6 @@
   width: 82px;
 }
 
-.catering-page .trending-icon-and {
-  height: 72px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 88px;
-}
 
 .catering-page .overlap-group-4 {
   height: 72px;
@@ -250,12 +224,12 @@
   width: 86px;
 }
 
-.catering-page .trending-icon {
-  height: 49px;
-  left: 7px;
+.catering-page img.trending-icon {
+  height: 66px;
+  left: 0;
   position: absolute;
-  top: 23px;
-  width: 71px;
+  top: 0;
+  width: 90px;
 }
 
 .catering-page .opinions-nav-bar {
@@ -284,12 +258,12 @@
   width: 82px;
 }
 
-.catering-page .opinions-icon-and {
-  height: 72px;
+.catering-page img.opinions-icon {
+  height: 66px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 92px;
+  width: 90px;
 }
 
 .catering-page .overlap-group-5 {
@@ -313,10 +287,10 @@
   width: 86px;
 }
 
-.catering-page .opinions-icon {
-  height: 48px;
+.catering-page img.opinions-icon {
+  height: 66px;
   left: 0;
   position: absolute;
-  top: 24px;
+  top: 0;
   width: 90px;
 }
