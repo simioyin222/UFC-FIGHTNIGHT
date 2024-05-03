@@ -67,6 +67,10 @@ const HomePage = () => {
     const navigateToStreaming = () => {
         navigate('/streaming');  // Navigate to StreamingPage
     };
+
+    const navigateToCatering = () => {
+        navigate('/catering');  // Navigate to CateringPage
+    };
     
     return (
         <div className="first-page-home-page">
@@ -109,7 +113,7 @@ const HomePage = () => {
                             <div className="catering-nav-bar">
                                 <div className="overlap-2">
                                     <div className="catering-nav-bar-box" />
-                                    <img className="catering-icon-and" src={cateringIcon} alt="Catering Icon" />
+                                    <img className="catering-icon-and" src={cateringIcon} alt="Catering Icon" onClick={navigateToCatering} />
                                 </div>
                             </div>
                             <div className="opinions-nav-bar">
